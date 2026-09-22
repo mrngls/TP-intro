@@ -1,0 +1,12 @@
+# Python-generated files
+__pycache__/
+pytest_cache/
+.pytest_cache/
+
+# Virtual environments
+.venv
+.env
+opencode.json
+
+# Local config files
+.vscode
