@@ -20,6 +20,11 @@ def word_frequency(text: str) -> dict:
     return freq
 
 
-def celsius_to_fahrenheit(celsius: float) -> float:
-    """À implémenter : convertit une température de Celsius en Fahrenheit."""
-    raise NotImplementedError
+def celsius_to_fahrenheit_gemma(celsius: float) -> float:
+    """Convertit une température de Celsius en Fahrenheit."""
+    return (celsius * 9 / 5) + 32
+
+
+def celsius_to_fahrenheit_qwen(celsius: float) -> float:
+    """Convertit une température de Celsius en Fahrenheit."""
+    return celsius * 1.8 + 32
