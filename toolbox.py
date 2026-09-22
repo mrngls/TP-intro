@@ -5,8 +5,19 @@ def is_palindrome(s: str) -> bool:
 
 
 def word_frequency(text: str) -> dict:
-    """À implémenter : renvoie {mot: nombre d'occurrences}, insensible à la casse et à la ponctuation."""
-    raise NotImplementedError
+    """Renvoie {mot: nombre d'occurrences}, insensible à la casse et à la ponctuation."""
+    text = text.lower()
+    cleaned = ""
+    for char in text:
+        if char.isalnum() or char == " ":
+            cleaned += char
+        else:
+            cleaned += " "
+    words = cleaned.split()
+    freq = {}
+    for word in words:
+        freq[word] = freq.get(word, 0) + 1
+    return freq
 
 
 def celsius_to_fahrenheit(celsius: float) -> float:
