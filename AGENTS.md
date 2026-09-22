@@ -20,3 +20,7 @@ Python exercise repo (`tp-intro`) for an OpenCode hands-on TP. Single module: `t
 
 - `is_palindrome` has an intentional bug: spaces are not stripped before comparison. `test_is_palindrome_with_spaces` fails by design.
 - `word_frequency` and `celsius_to_fahrenheit` raise `NotImplementedError` — these are the implementation tasks in the TP.
+
+## Session log
+
+See `SESSION_LOG.md` for a detailed record of what was asked and done.
